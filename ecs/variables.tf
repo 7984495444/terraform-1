@@ -1,11 +1,11 @@
 variable "aws_region" {
-  default     = "eu-west-1"
+  default     = "us-east-1"
   description = "aws region where our resources going to create choose"
   #replace the region as suits for your requirement
 }
 
 variable "az_count" {
-  default     = "2"
+  default     = "1"
   description = "number of availability zones in above region"
 }
 
@@ -25,7 +25,7 @@ variable "app_port" {
 }
 
 variable "app_count" {
-  default     = "2" #choose 2 bcz i have choosen 2 AZ
+  default     = "1" #choose 2 bcz i have choosen 2 AZ
   description = "numer of docker containers to run"
 }
 
